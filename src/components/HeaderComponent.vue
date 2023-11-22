@@ -16,7 +16,7 @@
           </ul>
         </div>
       </nav>
-      <div class="row my-5 height">
+      <div class="row height">
         <div class=" ps-2 pe-0 py-5 col-5 d-flex flex-column justify-content-center">
           <h1 class="title">SEM Campaigns Made Simple With Avada</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phaselius eu ornare erat. Curabitur pulvinar elit.
