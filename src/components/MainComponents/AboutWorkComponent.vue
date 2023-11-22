@@ -12,7 +12,7 @@
               :alt="article.name"></a>
         </div>
       </div>
-      <div class="text-center py-5">
+      <div class="text-center py-3">
         <button>VIEW OUR WORK</button>
       </div>
     </div>
