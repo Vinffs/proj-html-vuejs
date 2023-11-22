@@ -152,4 +152,24 @@ export const store = reactive({
       active: false,
     },
   ],
+  ourNews: [
+    {
+      path: "/images/related-service-2-320x202.jpg",
+      title: "Why You Need A SEO Agency Now",
+      date: "November 1st, 2017",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et scelerisque sem. Nunc molestie neque augue, at gravida mi blandit.",
+    },
+    {
+      path: "/images/related-service-4-320x202.jpg",
+      title: "SEO Tips For Your Startup",
+      date: "November 1st, 2017",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et scelerisque sem. Nunc molestie neque augue, at gravida mi blandit.",
+    },
+    {
+      path: "/images/blog-post-6-320x202.jpg",
+      title: "Image Optimization For Your Site",
+      date: "November 1st, 2017",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et scelerisque sem. Nunc molestie neque augue, at gravida mi blandit.",
+    },
+  ],
 });

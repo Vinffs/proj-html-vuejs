@@ -5,6 +5,7 @@
     <ServicesComponent />
     <AboutWorkComponent />
     <PlansComponent />
+    <NewsComponent />
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import IntroductionComponent from "./components/MainComponents/IntroductionCompo
 import ServicesComponent from "./components/MainComponents/ServicesComponent.vue";
 import AboutWorkComponent from "./components/MainComponents/AboutWorkComponent.vue";
 import PlansComponent from "./components/MainComponents/PlansComponent.vue";
+import NewsComponent from "./components/MainComponents/NewsComponent.vue";
 export default {
   name: 'App',
   components: {
@@ -22,6 +24,7 @@ export default {
     ServicesComponent,
     AboutWorkComponent,
     PlansComponent,
+    NewsComponent,
   },
   data() {
     return {
