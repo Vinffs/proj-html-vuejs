@@ -7,6 +7,7 @@
     <PlansComponent />
     <NewsComponent />
     <ReviewsComponent />
+    <ConsultationComponent />
   </main>
 </template>
 
@@ -18,6 +19,7 @@ import AboutWorkComponent from "./components/MainComponents/AboutWorkComponent.v
 import PlansComponent from "./components/MainComponents/PlansComponent.vue";
 import NewsComponent from "./components/MainComponents/NewsComponent.vue";
 import ReviewsComponent from "./components/MainComponents/ReviewsComponent.vue";
+import ConsultationComponent from "./components/MainComponents/ConsultationComponent.vue";
 export default {
   name: 'App',
   components: {
@@ -28,6 +30,7 @@ export default {
     PlansComponent,
     NewsComponent,
     ReviewsComponent,
+    ConsultationComponent,
   },
   data() {
     return {

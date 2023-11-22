@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 #mySwiper {
-  padding-bottom: 5em;
+  padding: 1.5em;
 
   .swiper {
     width: 100%;
