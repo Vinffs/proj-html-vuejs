@@ -218,4 +218,44 @@ export const store = reactive({
       ref: "#",
     },
   ],
+  info: [
+    {
+      symbol: true,
+      name: "Copyright 2012-2020",
+      company: "",
+    },
+    {
+      symbol: false,
+      name: "Avada Theme by",
+      company: "ThemeFusion",
+    },
+    {
+      symbol: false,
+      name: "All Rights Reserved",
+      company: "",
+    },
+    {
+      symbol: false,
+      name: "Powered by",
+      company: "WordPress",
+    },
+  ],
+  socials: [
+    {
+      icon: "fa-facebook-f",
+      ref: "#",
+    },
+    {
+      icon: "fa-instagram",
+      ref: "#",
+    },
+    {
+      icon: "fa-twitter",
+      ref: "#",
+    },
+    {
+      icon: "fa-youtube",
+      ref: "#",
+    },
+  ],
 });

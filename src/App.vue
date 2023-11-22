@@ -9,6 +9,7 @@
     <ReviewsComponent />
     <ConsultationComponent />
   </main>
+  <FooterComponent />
 </template>
 
 <script>
@@ -20,6 +21,7 @@ import PlansComponent from "./components/MainComponents/PlansComponent.vue";
 import NewsComponent from "./components/MainComponents/NewsComponent.vue";
 import ReviewsComponent from "./components/MainComponents/ReviewsComponent.vue";
 import ConsultationComponent from "./components/MainComponents/ConsultationComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 export default {
   name: 'App',
   components: {
@@ -31,6 +33,7 @@ export default {
     NewsComponent,
     ReviewsComponent,
     ConsultationComponent,
+    FooterComponent,
   },
   data() {
     return {
