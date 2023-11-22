@@ -172,4 +172,50 @@ export const store = reactive({
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et scelerisque sem. Nunc molestie neque augue, at gravida mi blandit.",
     },
   ],
+  reviews: [
+    {
+      image: "/images/testimonials-2.jpg",
+      text: "Ability proceeds from a fusion of skills, knowledge, understanding and imagination, consolidated by experience.",
+      name: "Luis Desalvo",
+      company: "CREO TECH",
+    },
+    {
+      image: "/images/testimonials-1.jpg",
+      text: "Beauty is when you can appreciate yourself. When you love yourself, that's when you're most beautiful.",
+      name: "Shelia McCourtney",
+      company: "ARCHITECT",
+    },
+  ],
+  clients: [
+    {
+      name: "avada-agency",
+      path: "/images/clients_partner_1-200x202.png",
+      ref: "#",
+    },
+    {
+      name: "avada-law",
+      path: "/images/clients_partner_2-200x202.png",
+      ref: "#",
+    },
+    {
+      name: "avada-vet",
+      path: "/images/clients_partner_3-200x202.png",
+      ref: "#",
+    },
+    {
+      name: "avada-health",
+      path: "/images/clients_partner_4-200x202.png",
+      ref: "#",
+    },
+    {
+      name: "avada",
+      path: "/images/clients_partner_5-200x202.png",
+      ref: "#",
+    },
+    {
+      name: "avada-university",
+      path: "/images/clients_partner_6-200x202.png",
+      ref: "#",
+    },
+  ],
 });
