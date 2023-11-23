@@ -97,6 +97,14 @@ header {
     border-radius: 20px;
     font-weight: bold;
     background-color: $color_primary;
+    transition: all 0.3s linear;
+
+    &:hover {
+      filter: brightness(110%);
+      box-shadow: rgba(255, 255, 255, 0.2) 0px 5px 15px 0px;
+      transition: all 0.3s linear;
+    }
+
   }
 
   .height {
