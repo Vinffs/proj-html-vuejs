@@ -61,10 +61,17 @@ section {
 
   .card-img-top {
     height: 250px;
+    overflow: hidden !important;
 
     img {
       width: 100%;
       height: 100%;
+      transition: all 0.3s linear;
+
+      &:hover {
+        transform: scale(1.2);
+        transition: all 0.3s linear;
+      }
     }
 
   }

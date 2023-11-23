@@ -7,7 +7,7 @@
       <div id="footer-nav" class="py-2">
         <ul class=" list-unstyled d-flex align-items-center m-0 py-1">
           <li class="px-4" v-for="index in store.navbar">
-            <a class="text-decoration-none" :class="{ 'active-menu': index.active }" :href="index.ref">
+            <a class="text-decoration-none" :href="index.ref">
               {{ index.title }}
             </a>
           </li>
@@ -52,6 +52,12 @@ export default {
     font-weight: 600;
     font-size: 1.1em;
     color: $color_light_grey;
+    transition: all 0.3s linear;
+
+    &:hover {
+      color: $color_primary;
+      transition: all 0.3s linear;
+    }
   }
 
   .active-menu {
@@ -80,6 +86,14 @@ export default {
     font-size: 1.5em;
     padding: 0 0.5em;
     color: $color_light_grey;
+    transition: all 0.3s linear;
+
+    &:hover {
+      color: $color_primary;
+      transition: all 0.3s linear;
+    }
   }
+
+
 }
 </style>

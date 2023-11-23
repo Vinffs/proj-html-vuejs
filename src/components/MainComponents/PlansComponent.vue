@@ -89,6 +89,8 @@ section {
     border: 1px solid $color_dark_grey;
     border-radius: 20px;
     font-weight: 600;
+    color: $color_dark_grey;
+    transition: all 0.3s linear;
   }
 
   .active-button {
@@ -103,6 +105,16 @@ section {
       font-size: 1.6em;
       font-weight: 800;
       padding-bottom: 1em;
+      color: $color_dark_grey;
+      transition: all 0.3s linear;
+    }
+
+    &:hover h5,
+    &:hover .button {
+      transform: scale(1.2);
+      color: $color_secondary;
+      border-color: $color_secondary;
+      transition: all 0.3s linear;
     }
 
     .currency {

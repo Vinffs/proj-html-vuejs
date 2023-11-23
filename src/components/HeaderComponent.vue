@@ -7,9 +7,8 @@
         </div>
         <div>
           <ul class=" list-unstyled d-flex align-items-center m-0 py-1">
-            <li class="px-4" v-for="section in store.navbar"><a class=" text-decoration-none text-white"
-                :href="section.ref">{{
-                  section.title }}</a>
+            <li class="px-4" v-for="section in store.navbar"><a class=" text-decoration-none" :href="section.ref">{{
+              section.title }}</a>
               <button class="mx-1 apply-btn" v-show="section.button">APPLY</button>
             </li>
             <button class="mx-2 my-0 btn yellow-btn">GET IN TOUCH NOW</button>
@@ -70,6 +69,17 @@ header {
     font-size: 1.2em;
   }
 
+  a {
+    color: $color_terciary;
+    transition: all 0.3s linear;
+
+    &:hover {
+      color: $color_primary;
+      transition: all 0.3s linear;
+    }
+  }
+
+
   .apply-btn {
     color: $color_primary;
     background-color: transparent;
@@ -105,10 +115,24 @@ header {
     button:first-child {
       background-color: $color_primary;
       margin-right: 1em;
+      transition: all 0.3s linear;
+
+      &:hover {
+        filter: brightness(110%);
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 5px 15px 0px;
+        transition: all 0.3s linear;
+      }
     }
 
     button:last-child {
       background-color: $color_secondary;
+      transition: all 0.3s linear;
+
+      &:hover {
+        filter: brightness(110%);
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 5px 15px 0px;
+        transition: all 0.3s linear;
+      }
     }
 
   }

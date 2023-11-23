@@ -7,9 +7,12 @@
           officia sit deserunt obcaecati.</p>
       </div>
       <div class="row m-0">
-        <div class="col-4 p-0" v-for=" article in store.ourWork">
-          <a :href="article.ref"><img class="w-100" :src="('/images/case-study-gallery' + article.path + '400x300.jpg')"
-              :alt="article.name"></a>
+        <div class="col-4 p-0" v-for="article in store.ourWork">
+          <a :href="article.ref" class="image-container">
+            <div class="overlay"></div>
+            <img class="w-100" :src="('/images/case-study-gallery' + article.path + '400x300.jpg')" :alt="article.name">
+            <i class="fa-solid fa-link"></i>
+          </a>
         </div>
       </div>
       <div class="text-center py-3">
@@ -55,14 +58,6 @@ section {
   }
 }
 
-.card {
-  background: transparent;
-
-  a {
-    color: $color_primary;
-  }
-}
-
 .row {
 
   .col-4:nth-child(4),
@@ -86,7 +81,48 @@ section {
     padding-bottom: 1em !important;
   }
 
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
 
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $color_purple_white;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover .overlay {
+      opacity: 1;
+    }
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3em;
+      color: $color_terciary;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover i {
+      opacity: 1;
+    }
+  }
 }
 
 button {

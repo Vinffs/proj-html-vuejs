@@ -10,7 +10,9 @@
       <div class="row justify-content-between p-0">
         <div class=" col-4" v-for="card in store.introduction">
           <div class="card border-0">
-            <i class="fa-solid" :class="card.icon"></i>
+            <div class="icon-container">
+              <i class="fa-solid" :class="card.icon"></i>
+            </div>
             <div class="card-body">
               <h5 class="card-title fs-bold">{{ card.title }}</h5>
               <p class="card-text">{{ card.text }}</p>
@@ -39,6 +41,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../assets/styles/partials/variables" as *;
+
 
 section {
   background-color: $terciary_variant;
@@ -71,25 +74,60 @@ section {
 
     .card {
       padding: 2em 0;
+
+      &:hover h5 {
+        color: $color_primary;
+        transition: all 0.3s linear;
+      }
     }
 
-    i {
-      font-size: 2.5em;
-      padding-bottom: 0.5em !important;
-      color: $color_primary;
-    }
 
     h5 {
       font-weight: 800;
       padding-bottom: 1em;
+      transition: all 0.3s linear;
     }
 
     p {
       line-height: 2em;
       padding-bottom: 2em;
     }
+  }
+}
 
+.icon-container {
+  width: 30%;
+  height: 30%;
+  overflow: hidden;
+  margin: 0 auto;
 
+  i {
+    font-size: 2.5em;
+    padding-bottom: 0.5em !important;
+    color: $color_primary;
+  }
+
+  &:hover i {
+    animation: translate 250ms;
+    transition: all 0.5s linear
+  }
+}
+
+@keyframes translate {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(200%);
+  }
+
+  51% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
 </style>

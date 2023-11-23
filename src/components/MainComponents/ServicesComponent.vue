@@ -9,9 +9,13 @@
       <div class="row">
         <div class="col-3" v-for="card in store.services">
           <div class="card text-center">
-            <i :class="card.icon"></i>
+            <div class="card-title">
+              <div class="icon-container">
+                <i :class="card.icon"></i>
+              </div>
+              <h5>{{ card.title }}</h5>
+            </div>
             <div class="card-body">
-              <h5 class="card-title">{{ card.title }}</h5>
               <p class="card-text">{{ card.text }}</p>
               <a class=" text-decoration-none" :href="card.ref">Read More ></a>
             </div>
@@ -59,37 +63,77 @@ section {
     text-align: center;
   }
 
-
 }
 
 .card {
+  color: $color_terciary;
   padding: 1.5em;
   background: $brigther_variant_secondary;
 
-  h5 {
-    font-weight: 800;
-    padding-bottom: 0.5em;
-  }
 
-  h5,
-  p {
+  .card-title {
     color: $color_terciary;
+    transition: all 0.3s linear;
+
+    h5 {
+      font-weight: 800;
+      padding-top: 1em;
+    }
+
+    &:hover {
+      color: $color_primary;
+      transition: all 0.3s linear;
+
+      i {
+        animation: translate 300ms;
+        transition: all 0.5s linear
+      }
+    }
+
   }
 
   p {
     padding-bottom: 0.5em;
     line-height: 2em;
+    color: $color_terciary;
   }
-
 
   a,
   i {
     color: $color_primary;
   }
 
-  i {
-    font-size: 2em;
-    padding-bottom: 0.5em;
+  .icon-container {
+    width: 30%;
+    height: 30%;
+    overflow: hidden;
+    margin: 0 auto;
+
+    i {
+      font-size: 2.5em;
+      padding-bottom: 0.5em;
+    }
+
+  }
+
+
+}
+
+@keyframes translate {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(150%);
+  }
+
+  51% {
+    transform: translateX(-150%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
 </style>

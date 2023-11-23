@@ -3,7 +3,12 @@
     <div class="title-container">
       <h2>What Our Clients Say</h2>
     </div>
-    <swiper id="mySlider" :spaceBetween="30" :pagination="{ clickable: true, }" :modules="modules" :grabCursor="true">
+    <swiper :autoplay="{
+      delay: 5000,
+      pauseOnMouseEnter: true,
+      waitForTransition: true,
+    }" id="mySlider" :loop="true" :spaceBetween="30" :pagination="{ clickable: true, }" :modules="modules"
+      :grabCursor="true">
       <swiper-slide v-for="person in store.reviews">
         <div class="pb-3">
           <img :src="person.image" :alt="person.name">
@@ -19,7 +24,7 @@
 <script>
 import { store } from "../../assets/data/store";
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import ClientsSlider from "./Slider/ClientsSlider.vue";
 import "swiper/scss";
 import "swiper/scss/pagination";
@@ -34,7 +39,7 @@ export default {
   data() {
     return {
       store,
-      modules: [Pagination],
+      modules: [Pagination, Autoplay],
     }
   },
 };
@@ -65,6 +70,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+
 
 }
 

@@ -1,7 +1,10 @@
 <template>
   <div class="container">
-    <swiper :watchSlidesProgress="true" :slidesPerView="4" :spaceBetween="5" :loop="true" :grabCursor="true"
-      :modules="modules" id="mySwiper">
+    <swiper :autoplay="{
+      delay: 3000,
+      pauseOnMouseEnter: true,
+    }" :watchSlidesProgress="true" :slidesPerView="4" :spaceBetween="5" :loop="true" :grabCursor="true"
+      :modules="modules" :navigation="true" id="mySwiper">
       <swiper-slide v-for="client in store.clients">
         <a :href="client.ref"><img class="w-75" :src="client.path" :alt="client.name"></a>
       </swiper-slide>
@@ -14,7 +17,7 @@ import { store } from "../../../assets/data/store";
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/scss';
 import 'swiper/scss/pagination';
-import { Pagination } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 export default {
   name: 'ClientsSlider',
   components: {
@@ -24,7 +27,7 @@ export default {
   data() {
     return {
       store,
-      modules: [Pagination],
+      modules: [Navigation, Autoplay],
     }
   }
 
@@ -32,6 +35,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use "../../../assets/styles/partials/variables" as *;
+
+.container {
+  border-top: 0.5px solid lightgrey;
+  margin-top: 2em;
+}
+
 #mySwiper {
   padding: 1.5em;
 
