@@ -40,6 +40,7 @@ export default {
     return {
       scroll: false,
       scrollThreshold: 100,
+
     }
   },
   methods: {

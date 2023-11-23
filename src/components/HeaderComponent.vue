@@ -7,8 +7,9 @@
         </div>
         <div>
           <ul class=" list-unstyled d-flex align-items-center m-0 py-1">
-            <li class="px-4" v-for="section in store.navbar"><a class=" text-decoration-none" :href="section.ref">{{
-              section.title }}</a>
+            <li class="px-4" v-for="section in store.navbar"><a class=" text-decoration-none"
+                :class="{ 'active-menu': section.active }" :href="section.ref">{{
+                  section.title }}</a>
               <button class="mx-1 apply-btn" v-show="section.button">APPLY</button>
             </li>
             <button class="mx-2 my-0 btn yellow-btn">GET IN TOUCH NOW</button>
@@ -49,6 +50,10 @@ nav {
   left: 0;
   width: 100%;
   z-index: 100;
+
+  .active-menu {
+    color: $color_primary;
+  }
 }
 
 header {
