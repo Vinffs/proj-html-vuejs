@@ -42,8 +42,11 @@ export default {
 @use "../../assets/styles/partials/variables" as *;
 
 section {
-  background-color: $variant_secondary_dark;
+  background: url('/images/pattern_background.png') $variant_secondary_dark;
+  background-position-y: 80%;
+  background-size: cover;
   padding-bottom: 10em;
+
 }
 
 .title-container {

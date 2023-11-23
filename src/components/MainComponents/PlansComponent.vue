@@ -62,6 +62,7 @@ export default {
 
 section {
   background-image: url('/images/background1.jpg');
+  background-size: cover;
   padding: 4em 0;
 
   .title-container {

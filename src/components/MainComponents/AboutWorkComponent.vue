@@ -134,5 +134,11 @@ button {
   border: none;
   border-radius: 50px;
   background-color: $color_primary;
+  transition: all 0.3s linear;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+  }
 }
 </style>
