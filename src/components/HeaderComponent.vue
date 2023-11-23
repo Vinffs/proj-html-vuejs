@@ -15,28 +15,19 @@
           </ul>
         </div>
       </nav>
-      <div class="row height">
-        <div class=" ps-2 pe-0 py-5 col-5 d-flex flex-column justify-content-center">
-          <h1 class="title">SEM Campaigns Made Simple With Avada</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phaselius eu ornare erat. Curabitur pulvinar elit.
-          </p>
-          <div class="buttons my-4">
-            <button class="btn">BUY AVADA NOW</button>
-            <button class="btn">CONTACT US</button>
-          </div>
-        </div>
-        <div class="col-7 ps-0">
-          <img src="/images/best-sem-seo-services-slide-2.png" alt="computer-image">
-        </div>
-      </div>
     </div>
+    <HeroSlider />
   </header>
 </template>
 
 <script>
 import { store } from "../assets/data/store";
+import HeroSlider from "./HeaderComponents/HeroSlider.vue";
 export default {
   name: 'HeaderComponent',
+  components: {
+    HeroSlider,
+  },
   data() {
     return {
       store,
@@ -48,38 +39,19 @@ export default {
 <style lang="scss" scoped>
 @use "../assets/styles/partials/variables" as *;
 
+.container {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
 header {
-  background: url('/images/pattern_background.png') top right repeat, $color_purple_yellow;
-  background-size: contain;
-
-  &>div:first-child {
-    background: url('/images/lines-1.png') top center no-repeat;
-  }
-
-  h1 {
-    font-size: 3em;
-    font-weight: bolder;
-    color: $color_terciary;
-    padding-bottom: 0.5em;
-    letter-spacing: 1px;
-  }
-
-  p {
-    color: $color_terciary;
-    font-size: 1.2em;
-  }
-
-  a {
-    color: $color_terciary;
-    transition: all 0.3s linear;
-
-    &:hover {
-      color: $color_primary;
-      transition: all 0.3s linear;
-    }
-  }
-
-
   .apply-btn {
     color: $color_primary;
     background-color: transparent;
@@ -105,10 +77,6 @@ header {
       transition: all 0.3s linear;
     }
 
-  }
-
-  .height {
-    padding-bottom: 10rem;
   }
 
   .buttons {
@@ -143,6 +111,10 @@ header {
       }
     }
 
+  }
+
+  a {
+    color: $color_terciary;
   }
 
 }

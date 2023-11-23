@@ -258,4 +258,24 @@ export const store = reactive({
       ref: "#",
     },
   ],
+  slider: [
+    {
+      title: "SEM Campaigns Made Simple With Avada",
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phaselius eu ornare erat. Curabitur pulvinar elit.",
+      class: "second",
+      bg: "bg-second",
+    },
+    {
+      title: "Rank Your Local Business With SEO",
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phaselius eu ornare erat. Curabitur pulvinar elit.",
+      class: "first",
+      bg: "bg-first",
+    },
+    {
+      title: "We Provide The Best Seo Services",
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phaselius eu ornare erat. Curabitur pulvinar elit.",
+      class: "third",
+      bg: "bg-third",
+    },
+  ],
 });

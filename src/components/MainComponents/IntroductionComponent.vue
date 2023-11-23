@@ -2,7 +2,7 @@
   <section>
     <div class="container pt-5">
       <div class="w-50 text-center mx-auto">
-        <h1>Meet The New Acengy SEO Template From The Avada Team</h1>
+        <h1>Meet The New Agency SEO Template From The Avada Team</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum ipsam qui ab architecto ullam facilis minus
           beatae
           voluptas voluptate dolorum.</p>
