@@ -43,7 +43,7 @@ section {
     background-size: 120%;
     background-position-y: 40%;
     background-position-x: 10%;
-    filter: brightness(15%);
+    filter: brightness(30%);
     z-index: -1;
   }
 }

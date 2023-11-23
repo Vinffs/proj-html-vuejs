@@ -1,6 +1,6 @@
 <template>
-  <swiper :navigation="true" :mousewheel="true" :keyboard="true" :modules="modules" class="mySwiper" :loop="true"
-    id="mySlider" :speed="500" :autoplay="{
+  <swiper :navigation="true" :keyboard="true" :modules="modules" class="mySwiper" :loop="true" id="mySlider" :speed="500"
+    :autoplay="{
       delay: 10000,
       disableOnInteraction: true,
       pauseOnMouseEnter: false,
@@ -223,16 +223,6 @@ p {
 
   to {
     opacity: 1;
-  }
-}
-
-@keyframes background {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.1);
   }
 }
 </style>

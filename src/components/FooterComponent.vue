@@ -7,7 +7,7 @@
       <div id="footer-nav" class="py-2">
         <ul class=" list-unstyled d-flex align-items-center m-0 py-1">
           <li class="px-4" v-for="index in store.navbar">
-            <a class="text-decoration-none" :href="index.ref">
+            <a class="text-decoration-none" :class="{ 'active-menu': index.active }" :href="index.ref">
               {{ index.title }}
             </a>
           </li>
@@ -33,6 +33,7 @@
 </template>
 
 <script>
+
 import { store } from "../assets/data/store";
 export default {
   name: 'FooterComponent',
