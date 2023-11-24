@@ -120,6 +120,12 @@ header {
 
   a {
     color: $color_terciary;
+    transition: all 0.3s linear;
+
+    &:hover {
+      color: $color_primary;
+      transition: all 0.3s linear;
+    }
   }
 
 }

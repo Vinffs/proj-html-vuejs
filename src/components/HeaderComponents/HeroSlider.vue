@@ -1,5 +1,5 @@
 <template>
-  <swiper :navigation="true" :keyboard="true" :modules="modules" class="mySwiper" :loop="true" id="mySlider" :speed="500"
+  <swiper :navigation="true" :keyboard="true" :modules="modules" class="mySwiper" :loop="true" id="mySlider" :speed="1500"
     :autoplay="{
       delay: 10000,
       disableOnInteraction: true,
